@@ -1,0 +1,31 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+  width: 90%;
+  height: 60vh;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
